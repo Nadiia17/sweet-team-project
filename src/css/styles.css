@@ -5,21 +5,41 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./main.css');
 @import url('./header.css');
+@import url('./advantages.css');
+@import url('./components.css');
+@import url('./how-made.css');
+@import url('./products.css');
+@import url('./sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./modal-buy-now.css');
+@import url('./modal-review.css');
+@import url('./modal-explore.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  /* Colors */
+  --bcg-color: E2E2E2;
+  --color-black: #111111;
+  --color-dark-violet: #1e1823;
+  --color-orange: #fd9222;
+  --color-light: #fafafa;
+  --color-white: #ffffff;
+  --text-color-dark-theme: rgba(255, 255, 255, 0.7);
+  --border-advantages-color: rgba(255, 255, 255, 0.5);
+  --text-color-light-theme: rgba(17, 17, 17, 0.7);
+  --color-modal-form: rgba(64, 64, 64, 0.3);
+  --hover-beige-btn-color: #fcf1e0;
+  --border-light-color: rgba(17, 17, 17, 0.1);
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  --reviews-card-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* Card Set */
+  --indent-column: 16px;
+  --indent-row: 20px;
+  --items: 1;
+
+  /* Transition */
+  --transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
