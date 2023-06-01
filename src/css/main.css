@@ -77,3 +77,67 @@ body {
     (100% - var(--indent-column) * (var(--items) - 1)) / var(--items)
   );
 }
+
+/* Button styles */
+.button {
+  display: block;
+  padding: 12px 28px;
+  min-width: 120px;
+  height: 41px;
+
+  border: 1px solid var(--color-white);
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    padding: 14px 40px;
+  }
+}
+
+.btn-orange {
+  background-color: var(--color-orange);
+  border: none;
+
+  transition: background-color var(--transition-dur-func),
+    color var(--transition-dur-func);
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color: var(--hover-beige-btn-color);
+  color: var(--color-orange);
+}
+
+.btn-transparent {
+  background-color: transparent;
+
+  transition: border-color var(--transition-dur-func),
+    color var(--transition-dur-func);
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+}
+
+.btn-white {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-orange);
+
+  transition: background-color var(--transition-dur-func),
+    color var(--transition-dur-func);
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
