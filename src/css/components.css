@@ -1,0 +1,152 @@
+.components {
+  padding: 72px 0;
+}
+
+.components-title {
+  max-width: 283px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.components-span {
+  color: var(--color-orange);
+}
+
+.components-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+.components-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.components-item {
+  position: relative;
+
+  max-width: 335px;
+  min-height: 270px;
+
+  background-color: var(--color-white);
+  border: 1px solid var(--color-orange);
+  border-radius: 15px;
+
+  overflow: hidden;
+}
+
+.components-thumb {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform var(--transition-dur-func);
+  transform-style: preserve-3d;
+}
+
+.components-thumb.milk-chokolate {
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.components-thumb.nuts {
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--color-dark-violet);
+  color: var(--color-white);
+}
+
+.components-image {
+}
+
+.components-subtitle {
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+.components-overlay {
+  background-color: var(--color-white);
+  color: var(--color-dark-violet);
+
+  padding: 28px;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.components-item:hover .components-thumb,
+.components-item:focus .components-thumb {
+  transform: rotateY(180deg);
+}
+
+.components-overlay-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 8px;
+}
+
+.components-overlay-list {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.components-overlay-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  gap: 4px;
+
+  font-size: 10px;
+  line-height: 1.2;
+
+  background-color: var(--color-light);
+  border: 1px solid var(--color-orange);
+  border-radius: 35px;
+
+  transition: color var(--transition-dur-func),
+    background-color var(--transition-dur-func);
+}
+
+.components-overlay-button:hover,
+.components-overlay-button:focus {
+  color: var(--color-white);
+  background-color: var(--color-orange);
+}
+
+.components-overlay-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
