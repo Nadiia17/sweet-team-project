@@ -1,0 +1,19 @@
+.sellers {
+  background-color: var(#fafafa);
+}
+.sellers-title {
+  margin-bottom: 32px;
+}
+.sellers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+.sellers-item {
+}
+.sellers-img {
+}
+.sellers-text {
+  margin-top: 32px;
+}
