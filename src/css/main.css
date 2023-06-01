@@ -34,7 +34,7 @@ body {
   }
 }
 
-section-title {
+.section-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -45,7 +45,7 @@ section-title {
   color: var(--color-black);
 }
 
-accent-text {
+.accent-text {
   color: var(--color-orange);
 }
 
