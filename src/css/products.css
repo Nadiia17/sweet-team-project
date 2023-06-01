@@ -58,6 +58,7 @@
   color: var(--color-black);
 }
 
+/* ----------slick customized styles------- */
 .slick-dots {
   bottom: -26px;
 }
@@ -67,32 +68,22 @@
 }
 
 .slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
   content: '';
-  text-align: center;
-  opacity: 0.25;
-  background-color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  opacity: 1;
+  background-color: var(--border-light-color);
   border-radius: 50%;
 }
 
 .slick-dots li.slick-active button:before {
-  width: 40px;
-  height: 20px;
-  border-radius: 20%;
-  background-color: tomato;
-  margin-right: 10px;
+  width: 28px;
+  height: 13px;
+  border-radius: 30px;
+  opacity: 1;
+  background-color: var(--color-orange);
 }
 
 .slick-dots li.slick-active {
-  width: 40px;
-  margin-right: 10px;
+  width: 27px;
 }
