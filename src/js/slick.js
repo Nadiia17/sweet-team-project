@@ -1,4 +1,4 @@
-$('.container').slick({
+$('.products-container').slick({
   dots: true,
   infinite: false,
   speed: 300,
