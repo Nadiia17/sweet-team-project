@@ -1,0 +1,127 @@
+.products-section {
+  padding-top: 36px;
+  padding-bottom: 72px;
+
+  background-color: var(--color-light);
+}
+
+.products-section > .section-title {
+  margin-bottom: 32px;
+}
+
+.products-box {
+  padding: 20px 32px;
+
+  overflow: hidden;
+  background-color: var(--color-white);
+  border: 1px solid var(--border-light-color);
+  border-radius: 15px;
+}
+
+.products-box-img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+.products-box-title {
+  margin-bottom: 2px;
+
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+}
+
+.products-box-descriprion {
+  margin-bottom: 18px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  color: var(--text-color-light-theme);
+}
+
+.products-box-button {
+  display: block;
+  min-width: 94px;
+  padding: 8px 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  height: 33px;
+  background-color: var(--color-light);
+  border: 1px solid var(--border-light-color);
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: var(--color-black);
+}
+
+/* ----------slick customized styles------- */
+.slick-dots {
+  bottom: -41px;
+}
+
+.slick-dots li {
+  width: 16px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots li button:before {
+  width: 13px;
+  height: 13px;
+  content: '';
+  opacity: 1;
+  background-color: var(--border-light-color);
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+  width: 28px;
+  height: 13px;
+  border-radius: 30px;
+  opacity: 1;
+  background-color: var(--color-orange);
+}
+
+.slick-dots li.slick-active {
+  width: 27px;
+}
+
+@media only screen and (min-width: 768px) {
+  .products-box {
+    margin-right: 9px;
+    margin-left: 9px;
+
+    width: 270px;
+  }
+
+  .products-section {
+    padding-top: 50px;
+    padding-bottom: 95px;
+  }
+
+  .products-section > .section-title {
+    margin-bottom: 50px;
+  }
+
+  .slick-dots {
+    bottom: -53px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .products-section {
+    padding-top: 64px;
+    padding-bottom: 109px;
+  }
+}
