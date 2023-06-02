@@ -10,7 +10,7 @@ body {
   color: var(--color-black);
   letter-spacing: -0.02em;
 
-  background-color: var(--bcg-color);
+  background-color: var(--color-light);
 }
 
 .container {
@@ -50,7 +50,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  section-title {
+  .section-title {
     font-size: 24px;
     line-height: 1.17;
   }
