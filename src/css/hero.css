@@ -1,3 +1,200 @@
 .hero {
-  background-color: grey;
+  padding-top: 395px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url('../img/hero/hero-bcg_mobile@1x.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 671px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+
+    max-width: 704px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../img/hero/hero-bcg_tablet@1x.jpg');
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 381px;
+    max-width: 1136px;
+
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../img/hero/hero-bcg_desktop@1x.jpg');
+  }
+}
+
+/* For retina screens */
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../img/hero/hero-bcg_mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../img/hero/hero-bcg_tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../img/hero/hero-bcg_desktop@2x.jpg');
+  }
+}
+
+/* @media only screen and (min-width: 336px) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../img/hero/hero-bcg_tablet@1x.jpg');
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hero {
+    max-width: 1136px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../img/hero/hero-bcg_desktop@1x.jpg');
+  }
+} */
+
+.hero-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 28px;
+    line-height: 1.22;
+    width: 484px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-subtitle {
+    flex-basis: 100%;
+    padding-right: 572px;
+  }
+}
+
+.hero-btns-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 293px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-btns-wrapper {
+    width: 341px;
+  }
+}
+
+.hero-scroll-down-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 107px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+
+  color: var(--color-white);
+  transition: color var(--transition-dur-fun);
+}
+
+.hero-scroll-down-link:hover,
+.hero-scroll-down-link:focus {
+  color: var(--color-orange);
+}
+
+.scroll-down-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+
+  transition: background-color var(--transition-dur-fun);
+}
+
+.hero-scroll-down-link:hover .scroll-down-btn,
+.hero-scroll-down-link:focus .scroll-down-btn {
+  background-color: var(--color-orange);
+}
+
+.scroll-down-icon {
 }
