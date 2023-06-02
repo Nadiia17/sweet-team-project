@@ -2,6 +2,18 @@
   padding: 72px 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .components {
+    padding: 100px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .components {
+    padding: 128px 0;
+  }
+}
+
 .components-title {
   max-width: 283px;
 
@@ -17,6 +29,16 @@
   margin-bottom: 24px;
 }
 
+@media only screen and (min-width: 768px) {
+  .components-title {
+    max-width: 411px;
+    font-size: 24px;
+    line-height: 1.17;
+
+    margin-bottom: 28px;
+  }
+}
+
 .components-span {
   color: var(--color-orange);
 }
@@ -30,23 +52,61 @@
   margin-bottom: 32px;
 }
 
+@media only screen and (min-width: 768px) {
+  .components-text {
+    max-width: 486px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
 .components-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .components-list {
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .components-list {
+    gap: 19px;
+  }
+}
+
 .components-item {
   position: relative;
 
   max-width: 335px;
-  min-height: 270px;
+  max-height: 270px;
 
   background-color: var(--color-white);
   border: 1px solid var(--color-orange);
   border-radius: 15px;
 
   overflow: hidden;
+}
+
+@media only screen and (max-width: 374px), (min-width: 1200px) {
+  .components-item {
+    overflow: scroll;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .components-item {
+    max-width: 336px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .components-item {
+    max-width: 269.75px;
+  }
 }
 
 .components-thumb {
@@ -58,22 +118,37 @@
 }
 
 .components-thumb.milk-chokolate {
-  width: 100%;
-  height: 100%;
-
   background-color: var(--color-orange);
   color: var(--color-white);
+
+  background-image: url(/img/components/milk-chokolate_des.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 28px;
+}
+
+.components-thumb.milk {
+  background-image: url(/img/components/milk_des.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 28px;
 }
 
 .components-thumb.nuts {
-  width: 100%;
-  height: 100%;
-
   background-color: var(--color-dark-violet);
   color: var(--color-white);
+
+  background-image: url(/img/components/nuts_des.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 28px;
 }
 
-.components-image {
+.components-thumb.semi-sweet {
+  background-image: url(/img/components/semi-sweet_des.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 28px;
 }
 
 .components-subtitle {
@@ -98,6 +173,12 @@
   transform: rotateY(180deg);
 }
 
+@media only screen and (min-width: 1200px) {
+  .components-overlay {
+    padding: 20px;
+  }
+}
+
 .components-item:hover .components-thumb,
 .components-item:focus .components-thumb {
   transform: rotateY(180deg);
@@ -118,6 +199,12 @@
   display: flex;
   gap: 6px;
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .components-overlay-list {
+    margin-bottom: 14px;
+  }
 }
 
 .components-overlay-button {
