@@ -1,5 +1,22 @@
 .how-made-container {
   background-color: #fafafa;
+  padding-bottom: 32px;
+}
+.img-vid {
+  position: relative;
+}
+
+.how-made-vid {
+  position: absolute;
+  max-width: 100%;
+  border: none;
+  z-index: 10;
+}
+
+.how-made-img {
+  width: 335px;
+  height: 500px;
+  border-radius: 15px;
 }
 
 .img-vid-description {
@@ -10,18 +27,8 @@
   margin-top: 32px;
 }
 
-.how-made-img {
-  width: 335px;
-  height: 500px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(pastry-chef-preparing-chocolate-cake.jpg);
-  border-radius: 15px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 .how-made-description-box {
+  display: flex;
 }
 
 .how-made-description {
@@ -36,8 +43,9 @@
 .how-made-description-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 18px;
+  position: relative;
+  padding-left: 16px;
 }
 
 .how-made-text {
@@ -49,15 +57,28 @@
   color: var(--color-black);
 }
 
+ul li::marker {
+  list-style-type: disc;
+  color: #4c4c4c;
+  border: 1px solid #eceded;
+}
+
 .how-made-card {
   width: 335px;
   height: 456px;
   background: #ffffff;
   border-radius: 15px;
   padding: 20px 14px;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
+  .how-made-container {
+    padding-bottom: 20px;
+  }
+
   .img-vid-description {
     margin-top: 50px;
   }
@@ -80,14 +101,24 @@
 
   .how-made-description {
     margin-bottom: 28px;
+    max-width: 350px;
+    max-height: 48px;
   }
 
   .how-made-description-list {
     align-items: start;
   }
+
+  .how-made-text {
+    max-width: 464px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .how-made-container {
+    padding-bottom: 128px;
+  }
+
   .img-vid-description {
     flex-direction: row;
   }
@@ -99,9 +130,13 @@
   .how-made-card {
     width: 516px;
     height: 400px;
-    padding: 32px;
+    padding: 32px 32px 34px 32px;
   }
   .how-made-description-list {
     gap: 24px;
+  }
+
+  .how-made-text {
+    max-width: 410px;
   }
 }
