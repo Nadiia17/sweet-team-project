@@ -6,33 +6,35 @@
     </h2>
     <form action="modal-form-review">
       <input
-        class="reviewer-name"
+        class="reviewer-name reviewer-form-field"
         type="text"
         name="name_form"
         placeholder="Name"
       />
       <input
-        class="reviewer-email"
+        class="reviewer-email reviewer-form-field"
         type="email"
         name="email_form"
         placeholder="Email"
       />
 
       <div class="phone-wrapper">
-        <label class="phone-uacode" for="tel_form">+380</label>
+        <div class="phone-flex">
+          <svg width="24" height="18">
+            <use href="../img/sgv-sprite.svg#ua"></use>
+          </svg>
+          <label class="phone-uacode" for="tel_form">+380</label>
+        </div>
         <input
-          class="reviewer-tel"
+          class="reviewer-tel reviewer-form-field"
           type="tel"
           name="tel_form"
           id="tel_form"
           placeholder="Phone number"
         />
-        <svg width="32" height="32">
-          <use href="../img/sgv-sprite.svg#ua"></use>
-        </svg>
       </div>
       <input
-        class="reviewer-tel"
+        class="reviewer-tel reviewer-form-field"
         type="tel"
         name="tel_form"
         placeholder="Enter text"
