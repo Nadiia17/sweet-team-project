@@ -86,9 +86,8 @@ body {
 /* Button styles */
 .button {
   display: block;
-  padding: 12px 28px;
+  padding: 11px 27px;
   min-width: 120px;
-  height: 41px;
 
   border: 1px solid var(--color-white);
   border-radius: 100px;
@@ -97,11 +96,12 @@ body {
   font-size: 14px;
   line-height: 1.21;
   color: var(--color-white);
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .button {
-    padding: 14px 40px;
+    padding: 13px 39px;
   }
 }
 
