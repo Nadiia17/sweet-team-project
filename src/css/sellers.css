@@ -9,6 +9,7 @@
   flex-direction: column;
   gap: 32px;
   margin-bottom: 20px;
+  align-items: center;
 }
 .sellers-item {
 }
