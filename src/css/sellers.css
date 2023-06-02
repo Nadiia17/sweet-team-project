@@ -4,6 +4,13 @@
 .sellers-title {
   margin-bottom: 32px;
 }
+@media only screen and (min-width: 768px) {
+  .sellers-title {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
 .sellers-list {
   display: flex;
   flex-direction: column;
@@ -11,10 +18,50 @@
   margin-bottom: 20px;
   align-items: center;
 }
+@media only screen and (min-width: 768px) {
+  .sellers-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
 .sellers-item {
 }
 .sellers-img {
 }
 .sellers-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #111111;
   margin-top: 32px;
+  margin-right: auto;
+  width: 306px;
+}
+.button {
+  display: block;
+  padding: 12px 28px;
+  min-width: 120px;
+  height: 41px;
+  border: 1px solid var(--color-white);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--color-white);
+}
+.btn-orange {
+  background-color: var(--color-orange);
+  border: none;
+  transition: background-color var(--transition-dur-func),
+    color var(--transition-dur-func);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .btn-orange {
+    margin-right: 0;
+  }
 }
