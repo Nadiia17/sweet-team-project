@@ -1,6 +1,8 @@
 .products-section {
   padding-top: 36px;
-  padding-bottom: 36px;
+  padding-bottom: 72px;
+
+  background-color: var(--color-light);
 }
 
 .products-section > .section-title {
@@ -8,7 +10,8 @@
 }
 
 .products-box {
-  padding: 32px 52px;
+  padding: 20px 32px;
+
   overflow: hidden;
   background-color: var(--color-white);
   border: 1px solid var(--border-light-color);
@@ -16,6 +19,8 @@
 }
 
 .products-box-img {
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 8px;
 }
 
@@ -60,11 +65,15 @@
 
 /* ----------slick customized styles------- */
 .slick-dots {
-  bottom: -26px;
+  bottom: -41px;
 }
 
 .slick-dots li {
-  width: 13px;
+  width: 16px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 
 .slick-dots li button:before {
@@ -86,4 +95,33 @@
 
 .slick-dots li.slick-active {
   width: 27px;
+}
+
+@media only screen and (min-width: 768px) {
+  .products-box {
+    margin-right: 9px;
+    margin-left: 9px;
+
+    width: 270px;
+  }
+
+  .products-section {
+    padding-top: 50px;
+    padding-bottom: 95px;
+  }
+
+  .products-section > .section-title {
+    margin-bottom: 50px;
+  }
+
+  .slick-dots {
+    bottom: -53px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .products-section {
+    padding-top: 64px;
+    padding-bottom: 109px;
+  }
 }

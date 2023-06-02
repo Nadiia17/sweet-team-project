@@ -1,35 +1,32 @@
 $('.products-container').slick({
   dots: true,
   infinite: false,
-  speed: 300,
+  arrows: false,
+  speed: 250,
   slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToScroll: 1,
+  draggable: true,
+  variableWidth: false,
   responsive: [
     {
       breakpoint: 1200,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
+        variableWidth: true,
         dots: true,
       },
     },
-    // {
-    //   breakpoint: 768,
-    //   settings: {
-    //     slidesToShow: 2,
-    //     slidesToScroll: 2,
-    //   },
-    // },
+
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        swipe: true,
+        variableWidth: false,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ],
 });
