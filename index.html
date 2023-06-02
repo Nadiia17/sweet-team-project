@@ -30,7 +30,7 @@
     <!-- Custom styles -->
     
     <script type="module" crossorigin src="/sweet-team-project/assets/index-6b4a58e6.js"></script>
-    <link rel="stylesheet" href="/sweet-team-project/assets/index-fe6ed312.css">
+    <link rel="stylesheet" href="/sweet-team-project/assets/index-af7b8917.css">
   </head>
   <body>
     <header class="header container">
@@ -151,7 +151,7 @@
         >scroll down
         <div class="scroll-down-btn">
           <svg class="scroll-down-icon">
-            <use href="/sweet-team-project/assets/sgv-sprite-aa8ec7d0.svg#angle-small"></use>
+            <use href="/sweet-team-project/assets/sgv-sprite-cb3e5965.svg#angle-small"></use>
           </svg>
         </div>
       </a>
@@ -482,7 +482,119 @@
     </main>
     
     <!-- Modal windows -->
-    
+    <div class="backdrop js-overlay-modal" >
+      <div class="modal-buy-now modal" data-modal="1">
+        <button class="modal-btn-buy-close js-modal-close"  type="button">
+          <svg class="modal-icon-buy-close" width="14" height="14">
+            <use href="/sweet-team-project/assets/sgv-sprite-cb3e5965.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+        <h2 class="section-title"><span class="accent-text">BUY</span> NOW</h2>
+        <div class="modal-buy-milk">
+          <ul class="modal-buy-information">
+            <li class="modal-buy-li">
+                <img
+                class="modal-buy-black-choco"
+                  src="data:image/jpeg;base64,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"
+                  alt="Black-chocolade"
+                  width="84"
+                  height="69"
+                />
+                <button class="modal-buy-btn-price">100 g</button>
+            </li>
+            <li class="modal-buy-li">
+                <img
+                class="modal-buy-black-choco"
+                  src="data:image/jpeg;base64,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"
+                  alt="kinder-chocolate"
+                  width="84"
+                    height="69"
+                />
+                <button class="modal-buy-btn-price">200 g</button>
+            </li>
+            <li class="modal-buy-li">
+              <img
+              class="modal-buy-black-choco"
+                src="data:image/jpeg;base64,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"
+                alt="Milk-chocolate"
+                width="84"
+                  height="69"
+              />
+              <button class="modal-buy-btn-price">300 g</button>
+            </li>
+          </ul>
+        </div>
+        <form name="modal-buy-form">
+          <label class="modal-buy-label">Personal information</label>
+          <div class="modal-buy-wrapper">
+            <input
+              placeholder="Name"
+              class="modal-buy-now-text"
+              type="text"
+              name="modal-name"
+              id="modal-name"
+            ></input>
+            <input
+              placeholder="Surname"
+              class="modal-buy-now-text"
+              type="text"
+              name="modal-surname"
+              id="modal-surname"
+            ></input>
+          </div>
+          <label class="modal-buy-label">Email</label>
+          <div class="modal-buy-wrapper">
+            <input
+              placeholder="Enter your email"
+              class="modal-buy-now-input"
+              type="text"
+              name="modal-email"
+              id="modal-email"
+            ></input>
+          </div>
+          <label class="modal-buy-label">Phone number</label>
+          <div class="modal-buy-wrapper">
+            <label class="modal-buy-code" for="tel_form">+380</label>
+            <input 
+              placeholder="Phone number"
+              class="modal-buy-now-input-phone"
+              type="text"
+              name="modal-phone"
+              id="modal-phone"
+            ></input>
+            <svg class="modal-icon-buy-ukr" width="24" height="24">
+              <use href="/sweet-team-project/assets/sgv-sprite-cb3e5965.svg#icon-Ukr"></use>
+            </svg>
+          </div>
+          <label class="modal-buy-label">Card number</label>
+          <div class="modal-buy-wrapper">
+            <input
+              placeholder="Enter card"
+              class="modal-buy-now-input"
+              type="text"
+              name="modal-card"
+              id="modal-card"
+            ></input>
+            <svg class="modal-icon-buy-card" width="32" height="21">
+              <use href="/sweet-team-project/assets/sgv-sprite-cb3e5965.svg#icon-MasterCard"></use>
+            </svg>
+          </div>
+          <label class="modal-buy-label">Comment</label>
+          <div class="modal-buy-wrapper">
+            <textarea
+              placeholder="Enter text"
+              class="modal-buy-comment"
+              type="text"
+              name="modal-comment"
+              id="modal-comment"
+              rows="6"
+            ></textarea>
+          </div>
+          <button class="modal-btn-submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
     
     
 
