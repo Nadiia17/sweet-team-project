@@ -1,5 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+      <symbol id="mastercard" viewBox="0 0 47 32">
+      <path fill="#fafafa" d="M4.267.533h38.4A3.733 3.733 0 0 1 46.4 4.266v23.467a3.733 3.733 0 0 1-3.733 3.733h-38.4a3.733 3.733 0 0 1-3.733-3.733V4.266A3.733 3.733 0 0 1 4.267.533z" style="fill:var(--color1, #fafafa)"/>
+      <path fill="#ed0006" d="M23.467 23.29a9.69 9.69 0 0 1-6.331 2.345c-5.39 0-9.76-4.396-9.76-9.818s4.37-9.818 9.76-9.818a9.69 9.69 0 0 1 6.331 2.345 9.69 9.69 0 0 1 6.331-2.345c5.391 0 9.76 4.395 9.76 9.818s-4.37 9.818-9.76 9.818a9.69 9.69 0 0 1-6.331-2.345z" style="fill:var(--color2, #ed0006)"/>
+      <path fill="#f9a000" d="M23.467 23.29c2.099-1.801 3.429-4.48 3.429-7.472s-1.331-5.672-3.429-7.472a9.69 9.69 0 0 1 6.331-2.345c5.391 0 9.76 4.395 9.76 9.818s-4.37 9.818-9.76 9.818a9.69 9.69 0 0 1-6.331-2.345z" style="fill:var(--color3, #f9a000)"/>
+      <path fill="#ff5e00" d="M23.467 23.29c2.099-1.801 3.429-4.48 3.429-7.472s-1.331-5.672-3.429-7.472c-2.099 1.801-3.429 4.48-3.429 7.472s1.331 5.672 3.429 7.472z" style="fill:var(--color4, #ff5e00)"/>
+      <path fill="none" stroke="#fafafa" stroke-width="1.067" d="M4.267.533h38.4A3.733 3.733 0 0 1 46.4 4.266v23.467a3.733 3.733 0 0 1-3.733 3.733h-38.4a3.733 3.733 0 0 1-3.733-3.733V4.266A3.733 3.733 0 0 1 4.267.533z" style="stroke:var(--color1, #fafafa)"/>
+    </symbol>
+    <symbol id="ua" viewBox="0 0 32 32">
+      <path fill="gold" d="M31.832 5.058H.243v23.508h31.589V5.058z" style="fill:var(--color5, #ffd700)"/>
+      <path fill="#0057b7" d="M.243 5.058h31.589v11.754H.243V5.058z" style="fill:var(--color6, #0057b7)"/>
+    </symbol>
     <symbol id="chocolate" viewBox="0 0 32 32">
       <path fill="#fcf1e0" d="M3.944 20.076 14.721 2.652l.64-.674 8.236 5.491.056 3.314 2.01 3.28-8.88 14.077-12.839-8.063z" style="fill:var(--color1, #fcf1e0)"/>
       <path fill="none" stroke="#fd9222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M21.635 23.88 7.45 15.016m3.911-6.417 14.185 8.864M10.63 25.864l11.736-19.25m4.81 8.175c-3.04-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.186 8.864 9.454-15.507z" style="stroke:var(--color2, #fd9222)"/>
