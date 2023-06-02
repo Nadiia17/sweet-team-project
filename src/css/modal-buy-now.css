@@ -276,13 +276,25 @@
   box-shadow: 0 0 0 4px rgba(228, 110, 60, 0.042);
 }
 
-.modal-buy-phone {
+.modal-buy-code {
   position: absolute;
   top: 50%;
-  left: 74px;
+  left: 50px;
   transform: translateY(-50%);
   transition: 400ms;
   pointer-events: none;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-code {
+    font-size: 18px;
+    left: 74px;
+  }
 }
 
 .modal-buy-now-input-phone {
@@ -318,18 +330,6 @@
   box-shadow: 0 0 0 4px rgba(228, 110, 60, 0.042);
 }
 
-.input-border {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  transform-origin: left center;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
 .modal-icon-buy-ukr {
   position: absolute;
   top: 50%;
@@ -343,7 +343,7 @@
   .modal-icon-buy-ukr {
     width: 32px;
     height: 32px;
-    left: 18px;
+    left: 24px;
     background-color: #fafafa;
   }
 }
