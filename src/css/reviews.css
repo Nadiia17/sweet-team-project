@@ -1,22 +1,46 @@
+.review-title {
+   margin: 0 auto 74px;
+   
+}
 .review-box {
-   position: relative;
-   width: 335px;
-   height: 200px;
+  position: relative;
+  width: 335px;
+  height: 200px;
 
-   padding: 56px 18px 32px;
+  padding: 56px 18px 32px;
 
-   overflow: hidden;
-   background-color: var(--color-white);
-   border: 1px solid var(--border-light-color);
-   border-radius: 15px;
+  background-color: var(--color-white);
+  border: 1px solid var(--border-light-color);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
 }
 
-.customer-box-img{
-   position: absolute;
-   width: 80px;
-   height: 80px;
-   overflow: hidden;
-      background-color: var(--color-white);
-      border: 1px solid var(--border-light-color);
-      border-radius: 50%;
+.customer-box-img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+
+  top: -42px;
+  left: 132px;
+
+  overflow: hidden;
+  background-color: var(--color-white);
+  border: 1px solid var(--border-light-color);
+  border-radius: 50%;
+}
+
+.customer-box-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.customer-reveiw-box {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  margin-bottom: 24px;
+  text-align: center;
 }
