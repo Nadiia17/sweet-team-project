@@ -1,5 +1,19 @@
 .sellers {
   background-color: var(#fafafa);
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+@media only screen and (min-width: 768px) {
+  .sellers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
 .sellers-title {
   margin-bottom: 32px;
@@ -129,5 +143,20 @@
   .text_btn {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 375px) {
+  img {
+    width: 335px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  img {
+    width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  img {
+    width: 368px;
   }
 }
