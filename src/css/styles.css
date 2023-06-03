@@ -18,7 +18,7 @@
 @import url('./modal-buy-now.css');
 @import url('./modal-review.css');
 @import url('./modal-explore.css');
-
+/* 
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
@@ -67,7 +67,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 :root {
   /* Colors */
