@@ -14,7 +14,7 @@
 .sellers-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+
   margin-bottom: 20px;
   align-items: center;
 }
@@ -24,12 +24,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: start;
+    gap: 16px;
+    margin-bottom: 32px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .sellers-list {
     position: relative;
-    gap: 16px;
   }
 }
 .sellers-container {
@@ -46,12 +47,19 @@
   letter-spacing: -0.02em;
   color: #111111;
   margin-top: 20px;
+  margin-bottom: 32px;
   margin-right: auto;
   width: 306px;
 }
 @media only screen and (min-width: 768px) {
   .sellers-text {
-    margin-top: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-text {
+    width: 407px;
   }
 }
 .button {
@@ -77,7 +85,7 @@
 }
 @media only screen and (min-width: 768px) {
   .btn-orange {
-    margin-top: 32px;
+    margin-top: 0;
     margin-right: 0;
     width: 162px;
     height: 50px;
@@ -85,14 +93,41 @@
 }
 @media only screen and (min-width: 1200px) {
   .btn-orange {
-    position: absolute;
+    /* position: absolute;
     top: 496px;
     left: 974px;
-    margin: 0;
+    margin: 0; */
   }
 }
 @media only screen and (max-width: 1199px) {
   .last-photo {
     display: none;
+  }
+}
+.text-mob {
+}
+@media only screen and (min-width: 768px) {
+  .text-mob {
+    display: none;
+  }
+}
+.text-tab {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .text-tab {
+    display: flex;
+    margin-right: 236px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text-tab {
+    margin-right: 567px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .text_btn {
+    display: flex;
+    justify-content: space-between;
   }
 }
