@@ -1,0 +1,120 @@
+
+  
+  .advantages {
+     background: var(--color-dark-violet); 
+         margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+    padding-top: 62px;
+    padding-bottom: 68px;
+
+    /* margin-bottom: 72px;
+    margin-top: 72px; */
+    
+  }
+  
+  
+  .advantages-list {
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* gap: 20px; */
+    /* align-items: center; */
+   
+   
+    
+  }
+  @media screen and (min-width: 768px) {
+   .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+     --items: 2;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .advantages-list {
+        gap: 70px;
+  --items: 3; 
+    }
+  }
+  .advantages-tittle {
+    width: 308px;
+
+  }
+  @media only screen and (min-width: 768px) {
+     .advantages-tittle {
+  
+  --items: 2;
+  }
+  }
+  @media only screen and (min-width: 1200px) {
+     .advantages-tittle {
+  width: 326px;
+  }
+  }
+  .advantages-tittle-img {
+      
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 365px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    
+  }
+
+  
+  
+ 
+  
+  .advantages-sub-tittle {
+     font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    
+  margin-top: 22px;
+  margin-bottom: 18px;
+  color: var(--color-white);
+  }
+  @media screen and (min-width: 768px) {
+    .advantages-sub-tittle {
+      text-align: start;
+  }
+  }
+  @media screen and (min-width: 1200px) {
+    .advantages-sub-tittle {
+       font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+  }
+  
+  
+  .advantages-description {
+    width: 308px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--color-white);
+    
+   
+
+   
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .advantages-tittle::before {
+      content: '';
+      display: block; 
+    
+     
+     transform: rotate(90deg) translateX(100px) translateY(-280px);
+       transform-origin: center left end;  
+      width: 124px;
+ border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  }

@@ -91,12 +91,6 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 374px), (min-width: 1200px) {
-  .components-item {
-    overflow: scroll;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .components-item {
     max-width: 336px;
@@ -121,34 +115,130 @@
   background-color: var(--color-orange);
   color: var(--color-white);
 
-  background-image: url(/img/components/milk-chokolate_des.png);
+  background-size: 224px 171px;
+  background-image: url(../img/components/milk-chokolate_mob-tab.png);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 28px;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .components-thumb.milk-chokolate {
+    background-image: url(/img/components/milk-chokolate_mob-tab@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .components-thumb.milk-chokolate {
+    background-size: 206px 160px;
+    background-image: url(/img/components/milk-chokolate_des.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .components-thumb.milk-chokolate {
+    background-image: url(/img/components/milk-chokolate_des@2x.png);
+  }
+}
+
 .components-thumb.milk {
-  background-image: url(/img/components/milk_des.png);
+  background-size: 224px 171px;
+  background-image: url(/img/components/milk_mob-tab.png);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 28px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .components-thumb.milk {
+    background-image: url(/img/components/milk_mob-tab@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .components-thumb.milk {
+    background-size: 206px 160px;
+    background-image: url(/img/components/milk_des.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .components-thumb.milk {
+    background-image: url(/img/components/milk_des@2x.png);
+  }
 }
 
 .components-thumb.nuts {
   background-color: var(--color-dark-violet);
   color: var(--color-white);
 
-  background-image: url(/img/components/nuts_des.png);
+  background-size: 224px 171px;
+  background-image: url(/img/components/nuts_mob-tab.png);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 28px;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .components-thumb.nuts {
+    background-image: url(/img/components/nuts_mob-tab@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .components-thumb.nuts {
+    background-size: 206px 160px;
+    background-image: url(/img/components/nuts_des.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .components-thumb.nuts {
+    background-image: url(/img/components/nuts_des@2x.png);
+  }
+}
+
 .components-thumb.semi-sweet {
-  background-image: url(/img/components/semi-sweet_des.png);
+  background-size: 224px 171px;
+  background-image: url(/img/components/semi-sweet_mob-tab.png);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 28px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .components-thumb.semi-sweet {
+    background-image: url(/img/components/semi-sweet_mob-tab@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .components-thumb.semi-sweet {
+    background-size: 206px 160px;
+    background-image: url(/img/components/semi-sweet_des.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .components-thumb.semi-sweet {
+    background-image: url(/img/components/semi-sweet_des@2x.png);
+  }
 }
 
 .components-subtitle {
@@ -166,11 +256,19 @@
   background-color: var(--color-white);
   color: var(--color-dark-violet);
 
+  height: 270px;
   padding: 28px;
 
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 374px), (min-width: 1200px) {
+  .components-thumb:hover .components-overlay,
+  .components-thumb:focus .components-overlay {
+    overflow-y: scroll;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -224,10 +322,13 @@
 
   transition: color var(--transition-dur-func),
     background-color var(--transition-dur-func);
+  transition-delay: 250ms;
+
+  pointer-events: none;
 }
 
-.components-overlay-button:hover,
-.components-overlay-button:focus {
+.components-item:hover .components-overlay-button.active,
+.components-item:focus .components-overlay-button.active {
   color: var(--color-white);
   background-color: var(--color-orange);
 }

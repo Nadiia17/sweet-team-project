@@ -1,13 +1,148 @@
 .header {
-  padding: 25px 0;
+
+
+}
+.page-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px ;
+padding-left: 20px;
+padding-right: 20px;
+margin-bottom: 19px;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-title{
   color:var(--color-black);
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+  margin-right: 4px;
+  
 }
+
+.header-logo_list{
+  display: flex;
+  align-items: center;
+ 
+}
+.header-logo_list-item{
+  
+  }
 .header-logo{
   font-style:italic;
 }
+.page-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo-icon{
+  width: 28px;
+  height: 28px;
 
+}
+
+
+.mobile-menu-open_icon{
+  stroke: var(--color-black);
+  width:28px;
+   height:28px
+  }
+.mobile-menu-open{
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  padding: 0;
+  line-height: 0;
+  margin-left:auto ;
+ 
+ 
+}
+.header-nav-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.header-nav-link{
+  font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+  color: var(--color-black);
+  transition: color var(--transition-dur-func);
+}
+.header-nav-link:hover,
+.header-nav-link:focus{
+    color: var(--color-orange);
+}
+.header-social-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+ 
+}
+.header-social-svg{
+fill: none;
+stroke: var(--color-black);
+transition: stroke var(--transition-dur-func);
+}
+.header-social-svg:hover,
+.header-social-svg:focus{
+    stroke: var(--color-orange);
+}
+
+@media screen and (max-width:1200px){
+
+  .header-nav-list{
+    display: none;
+  }
+  .header-social-list{
+    display: none;
+  }
+ 
+}
+@media screen and (min-width:768px){
+  .page-header-container{
+    padding-top: 31px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-bottom: 31px;
+  }
+  .mobile-menu-open_icon{
+    width: 32px;
+    height: 32px;
+  }
+
+ 
+}
+@media screen and (min-width:1200px){
+  .mobile-menu-open{
+    display: none;
+  }
+  .header-title{
+    color:var(--color-black);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: 7px;
+    
+  }
+  .header-logo-icon{
+    width: 32px;
+    height: 32px;
+  
+  }
+  .page-header-container{
+    padding-top: 26px;
+    margin-bottom: 34px;
+  }
+  .header-logo_list{
+    margin-right: 190px;
+  }
+}
