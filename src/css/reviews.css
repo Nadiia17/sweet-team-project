@@ -1,0 +1,22 @@
+.review-box {
+   position: relative;
+   width: 335px;
+   height: 200px;
+
+   padding: 56px 18px 32px;
+
+   overflow: hidden;
+   background-color: var(--color-white);
+   border: 1px solid var(--border-light-color);
+   border-radius: 15px;
+}
+
+.customer-box-img{
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   overflow: hidden;
+      background-color: var(--color-white);
+      border: 1px solid var(--border-light-color);
+      border-radius: 50%;
+}
