@@ -1,16 +1,25 @@
 .footer {
-  background-color: red;
+  background-color: #1e1823;
   padding: 32px 0;
 }
 .footer-container {
 }
 .footer-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 .accent-text {
 }
 .footer-contact {
 }
 .footer-contact-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
 }
 .footer-address {
 }
