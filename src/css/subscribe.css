@@ -1,6 +1,12 @@
+/* ======== Section Subscribe =======*/
+
 .section-subscribe {
     padding-top: 62px;
-    padding-bottom: 68px;
+    padding-bottom: 63px;
+
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-image: url("/img/subscribe/subscribe_mob@1x.jpg");
     background-repeat: no-repeat;
@@ -38,7 +44,6 @@
     }
 }
 
-
 @media only screen and (min-width: 769px) {
     .section-subscribe {
         background-image: url("/img/subscribe/subscribe-desk@1x.jpg");
@@ -59,11 +64,9 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
-    width: 100%;
     padding-left: 0;
     padding-right: 0;
 }
-
 
 @media only screen and (min-width: 1200px) {
     .container-subscribe {
@@ -76,7 +79,6 @@
     width: 291px;
 }
 
-
 @media only screen and (min-width: 768px) {
     .subscribe-title {
         width: 378px;
@@ -86,6 +88,7 @@
 
 .subscribe-text {
     min-width: 320px;
+    max-width: 325px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
@@ -94,14 +97,15 @@
     color: var(--color-white);
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 768px) {
     .subscribe-text {
-        max-width: 326px;
+        max-width: 467px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .subscribe-text {
-        max-width: 467px;
+    .button-subscribe {
+        font-size: 18px;
+        line-height: 1.29;
     }
 }
