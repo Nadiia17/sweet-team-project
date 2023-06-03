@@ -91,7 +91,7 @@
     max-width: 325px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.29;
     text-align: center;
     vertical-align: top;
     color: var(--color-white);
@@ -103,9 +103,26 @@
     }
 }
 
+.button-subscribe {
+    width: 128px;
+    height: 41px;
+    padding-top: 12px;
+    padding-left: 28px;
+    padding-bottom: 12px;
+    padding-right: 28px;
+}
+
 @media only screen and (min-width: 768px) {
     .button-subscribe {
+        width: 172px;
+        height: 50px;
+        padding-top: 14px;
+        padding-left: 40px;
+        padding-bottom: 14px;
+        padding-right: 40px;
         font-size: 18px;
         line-height: 1.29;
     }
 }
+
+/* ======== Section Subscribe =======*/
