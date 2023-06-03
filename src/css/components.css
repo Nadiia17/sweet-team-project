@@ -267,7 +267,7 @@
 @media only screen and (max-width: 374px), (min-width: 1200px) {
   .components-thumb:hover .components-overlay,
   .components-thumb:focus .components-overlay {
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
