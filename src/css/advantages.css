@@ -49,7 +49,7 @@
 
   .advantages-tittle {
     max-width: 308px;
-
+    position: relative;
   }  
 
   .advantages-tittle-img {
@@ -105,11 +105,19 @@ display: flex;
     .advantages-tittle::after {
       content: '';
       display: block; 
+    position: absolute;
+   
+    top: 50%;
+    left: 90%;
     
      
      transform: rotate(90deg);
-        transform-origin: top center;   
+        
       width: 124px;
  border: 1px solid rgba(255, 255, 255, 0.5);
   }
+  .advantages-tittle:last-child::after {
+     
+  display: none;
+}
   }
