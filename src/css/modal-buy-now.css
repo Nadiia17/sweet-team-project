@@ -1,7 +1,4 @@
 .backdrop {
-  opacity: 0;
-  visibility: hidden;
-
   position: fixed;
   width: 100%;
   height: 100%;
@@ -16,16 +13,13 @@
   overflow-x: hidden;
 }
 
-.backdrop.active,
-.modal-buy-now.active {
-  opacity: 1;
-  visibility: visible;
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-buy-now {
-  opacity: 0;
-  visibility: hidden;
-
   position: absolute;
   top: 50%;
   left: 50%;
