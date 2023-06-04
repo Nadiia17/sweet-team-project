@@ -84,6 +84,7 @@
 .footer-menu-link {
   color: var(--color-white);
   transition: color var(--transition-dur-func);
+  padding: 15px 0;
 }
 .footer-menu-link:hover,
 .footer-menu-link:focus {
