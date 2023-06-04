@@ -10,7 +10,6 @@
   z-index: 100;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-x: hidden;
 }
 
 .is-hidden {
@@ -24,7 +23,8 @@
   top: 50%;
   left: 50%;
   width: 311px;
-  height: 994px;
+  height: 95%;
+  overflow: auto;
   transform: translate(-50%, -50%);
   padding: 32px 24px;
   margin-top: 200px;
@@ -38,9 +38,9 @@
 
 @media only screen and (min-width: 768px) {
   .modal-buy-now {
-    height: 1058px;
+    height: 95%;
     width: 609px;
-    padding: 48px;
+    padding: 40px;
   }
 }
 
