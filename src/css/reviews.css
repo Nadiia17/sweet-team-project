@@ -26,10 +26,8 @@
 
   top: -42px;
   left: 132px;
-
   overflow: hidden;
   background-color: var(--color-white);
-  border: 1px solid var(--border-light-color);
   border-radius: 50%;
 }
 
@@ -51,4 +49,10 @@
 
 .btn-review {
   margin: 65px auto 0;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-orange);
+
+  transition: background-color var(--transition-dur-func),
+    color var(--transition-dur-func);
 }
