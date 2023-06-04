@@ -1,0 +1,140 @@
+.sellers {
+  background-color: var(#fafafa);
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+@media only screen and (min-width: 768px) {
+  .sellers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+.sellers-title {
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .sellers-title {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+.sellers-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .sellers-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-list {
+    position: relative;
+  }
+}
+.sellers-container {
+}
+
+.sellers-item {
+}
+.sellers-img {
+}
+.sellers-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  margin-right: auto;
+  width: 306px;
+}
+@media only screen and (min-width: 768px) {
+  .sellers-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-text {
+    width: 407px;
+  }
+}
+.sellers-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sellers-btn {
+    margin-top: 0;
+    margin-right: 0;
+    width: 162px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .last-photo {
+    display: none;
+  }
+}
+.text-mob {
+}
+@media only screen and (min-width: 768px) {
+  .text-mob {
+    display: none;
+  }
+}
+.text-tab {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .text-tab {
+    display: flex;
+    margin-right: 236px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text-tab {
+    margin-right: 567px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .text_btn {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .sellers-img {
+    width: 335px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .sellers-img {
+    width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-img {
+    width: 368px;
+  }
+}
