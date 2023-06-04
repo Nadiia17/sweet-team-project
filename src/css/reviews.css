@@ -1,6 +1,10 @@
-.review-title {
-   margin: 0 auto 74px;
-   
+.review-section-title {
+  margin: 0 auto 74px;
+  text-align: center;
+}
+.reviwes-section {
+  padding-top: 30px;
+  padding-bottom: 84px;
 }
 .review-box {
   position: relative;
@@ -43,4 +47,8 @@
   text-align: center;
   margin-bottom: 24px;
   text-align: center;
+}
+
+.btn-review {
+  margin: 65px auto 0;
 }

@@ -115,7 +115,7 @@
    height: 12px;
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
    visibility: hidden;
    opacity: 0;
    pointer-events: none;
@@ -124,7 +124,7 @@
 .backdrop.is-hidden .modal-window-review {
    opacity: 0;
    transform: translateX(-50%) translateY(-70%);
-} */
+}
 
 @media only screen and (min-width: 768px) {
 .modal-window-review {
