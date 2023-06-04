@@ -47,6 +47,7 @@
           placeholder="Name"
           class="modal-buy-now-text"
           type="text"
+          pattern="[A-Za-z]+"
           name="modal-name"
           id="modal-name"
         />
@@ -54,6 +55,7 @@
           placeholder="Surname"
           class="modal-buy-now-text"
           type="text"
+          pattern="[A-Za-z]+"
           name="modal-surname"
           id="modal-surname"
         />
@@ -64,6 +66,7 @@
           placeholder="Enter your email"
           class="modal-buy-now-input"
           type="text"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           name="modal-email"
           id="modal-email"
         />
@@ -75,6 +78,7 @@
           placeholder="Phone number"
           class="modal-buy-now-input-phone"
           type="text"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           name="modal-phone"
           id="tel_form"
         />
@@ -88,6 +92,8 @@
           placeholder="Enter card"
           class="modal-buy-now-input"
           type="text"
+          pattern="[0-9]{13,19}"
+          maxlength="19"
           name="modal-card"
           id="modal-card"
         />
