@@ -5,13 +5,21 @@
          margin-left: auto; 
     margin-right: auto;
     width: 100%;
-    padding-top: 62px;
-    padding-bottom: 68px;
-
-    /* margin-bottom: 72px;
-    margin-top: 72px; */
-    
+       
   }
+
+  .advantages-container {
+    padding: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    .advantages-container {
+       padding: 50px 32px;
+     }}
+     @media screen and (min-width: 1200px) {
+      .advantages-container {
+         padding: 50px;
+       }}
+       
   
   
   .advantages-list {
@@ -19,11 +27,10 @@
     display: flex;
     flex-direction: column;
     
-    /* gap: 20px; */
-    /* align-items: center; */
-   
-   
-    
+     gap: 20px; 
+     align-items: center; 
+     align-items: flex-start;
+       
   }
   @media screen and (min-width: 768px) {
    .advantages-list {
@@ -37,23 +44,16 @@
     .advantages-list {
         gap: 70px;
   --items: 3; 
+  flex-wrap: nowrap;
     }
   }
-  .advantages-tittle {
-    width: 308px;
 
-  }
-  @media only screen and (min-width: 768px) {
-     .advantages-tittle {
-  
-  --items: 2;
-  }
-  }
-  @media only screen and (min-width: 1200px) {
-     .advantages-tittle {
-  width: 326px;
-  }
-  }
+  .advantages-tittle {
+    max-width: 326px;
+    position: relative;
+    padding-right: 18px;
+  }  
+
   .advantages-tittle-img {
       
     width: 62px;
@@ -95,26 +95,30 @@ display: flex;
   
   
   .advantages-description {
-    width: 308px;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     color: var(--color-white);
-    
-   
-
-   
+       
   }
   
   @media screen and (min-width: 1200px) {
-    .advantages-tittle::before {
+    .advantages-tittle::after {
       content: '';
       display: block; 
-    
+    position: absolute;   
      
-     transform: rotate(90deg) translateX(100px) translateY(-280px);
-       transform-origin: center left end;  
+     transform: rotate(90deg);
+     transform-origin:  bottom left;
+     top: 25%;
+    left: 100%;
+        
       width: 124px;
  border: 1px solid rgba(255, 255, 255, 0.5);
   }
+  .advantages-tittle:last-child::after {
+     
+  display: none;
+}
   }

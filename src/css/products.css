@@ -1,8 +1,17 @@
 .products-section {
+  min-height: 420px;
   padding-top: 36px;
   padding-bottom: 72px;
 
   background-color: var(--color-light);
+}
+
+.products-container {
+  display: none;
+}
+
+.products-container.slick-initialized {
+  display: block;
 }
 
 .products-section > .section-title {
@@ -11,6 +20,9 @@
 
 .products-box {
   padding: 20px 32px;
+
+  max-width: 335px;
+
   overflow: hidden;
   background-color: var(--color-white);
   border: 1px solid var(--border-light-color);
@@ -98,15 +110,20 @@
 
 @media only screen and (min-width: 768px) {
   .products-box {
-    margin-right: 9px;
-    margin-left: 9px;
-
     width: 270px;
   }
 
   .products-section {
     padding-top: 50px;
     padding-bottom: 95px;
+  }
+
+  .slick-slide {
+    margin: 0 9px;
+  }
+
+  .slick-list {
+    margin: 0 -9px;
   }
 
   .products-section > .section-title {

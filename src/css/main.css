@@ -107,7 +107,7 @@ body {
 
 .btn-orange {
   background-color: var(--color-orange);
-  border: none;
+  border-color: transparent;
 
   transition: background-color var(--transition-dur-func),
     color var(--transition-dur-func);
