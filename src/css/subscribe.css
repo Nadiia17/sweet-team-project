@@ -114,12 +114,6 @@
 
 @media only screen and (min-width: 768px) {
     .button-subscribe {
-        width: 172px;
-        height: 50px;
-        padding-top: 14px;
-        padding-left: 40px;
-        padding-bottom: 14px;
-        padding-right: 40px;
         font-size: 18px;
         line-height: 1.29;
     }
