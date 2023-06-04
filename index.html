@@ -30,7 +30,7 @@
     <!-- Custom styles -->
     
     <script type="module" crossorigin src="/sweet-team-project/assets/index-e9639d26.js"></script>
-    <link rel="stylesheet" href="/sweet-team-project/assets/index-c00840c1.css">
+    <link rel="stylesheet" href="/sweet-team-project/assets/index-5d4687e0.css">
   </head>
   <body>
     <header class="header">
@@ -716,18 +716,20 @@
       <label class="modal-buy-label">Personal information</label>
       <div class="modal-buy-wrapper">
         <input
+          required
           placeholder="Name"
           class="modal-buy-now-text"
           type="text"
-          pattern="[A-Za-z]+"
+          pattern="[A-Za-zА-ЯІЇЄҐа-яіїєґ']+"
           name="modal-name"
           id="modal-name"
         />
         <input
+          required
           placeholder="Surname"
           class="modal-buy-now-text"
           type="text"
-          pattern="[A-Za-z]+"
+          pattern="[A-Za-zА-ЯІЇЄҐа-яіїєґ']+"
           name="modal-surname"
           id="modal-surname"
         />
@@ -735,9 +737,10 @@
       <label class="modal-buy-label">Email</label>
       <div class="modal-buy-wrapper">
         <input
+          required
           placeholder="Enter your email"
           class="modal-buy-now-input"
-          type="text"
+          type="email"
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           name="modal-email"
           id="modal-email"
@@ -747,10 +750,11 @@
       <div class="modal-buy-wrapper">
         <label class="modal-buy-code" for="tel_form">+380</label>
         <input
+          required
           placeholder="Phone number"
           class="modal-buy-now-input-phone"
           type="text"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
           name="modal-phone"
           id="tel_form"
         />
@@ -761,6 +765,7 @@
       <label class="modal-buy-label">Card number</label>
       <div class="modal-buy-wrapper">
         <input
+          required
           placeholder="Enter card"
           class="modal-buy-now-input"
           type="text"
