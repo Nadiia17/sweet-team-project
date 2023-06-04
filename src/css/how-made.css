@@ -1,16 +1,7 @@
 .how-made-container {
   background-color: #fafafa;
-  padding-bottom: 32px;
-}
-.img-vid {
-  position: relative;
-}
-
-.how-made-vid {
-  position: absolute;
-  max-width: 100%;
-  border: none;
-  z-index: 10;
+  padding-bottom: 36px;
+  padding-top: 36px;
 }
 
 .how-made-img {
@@ -25,10 +16,6 @@
   align-items: center;
   gap: 20px;
   margin-top: 32px;
-}
-
-.how-made-description-box {
-  display: flex;
 }
 
 .how-made-description {
@@ -64,19 +51,16 @@ ul li::marker {
 }
 
 .how-made-card {
-  width: 335px;
-  height: 456px;
+  max-width: 335px;
   background: #ffffff;
   border-radius: 15px;
   padding: 20px 14px;
-  order: 1;
-  flex-grow: 0;
-  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
   .how-made-container {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .img-vid-description {
@@ -93,16 +77,16 @@ ul li::marker {
     height: 400px;
   }
 
-  .how-made-card {
-    width: 614px;
-    height: 356px;
-    padding: 32px;
-  }
-
   .how-made-description {
     margin-bottom: 28px;
     max-width: 350px;
     max-height: 48px;
+  }
+
+  .how-made-card {
+    max-width: 614px;
+    height: 356px;
+    padding: 32px 102px 32px 32px;
   }
 
   .how-made-description-list {
@@ -116,7 +100,8 @@ ul li::marker {
 
 @media screen and (min-width: 1200px) {
   .how-made-container {
-    padding-bottom: 128px;
+    padding-bottom: 64px;
+    padding-top: 64px;
   }
 
   .img-vid-description {
@@ -128,9 +113,9 @@ ul li::marker {
     height: 400px;
   }
   .how-made-card {
-    width: 516px;
+    max-width: 516px;
     height: 400px;
-    padding: 32px 32px 34px 32px;
+    padding: 32px 58px 34px 32px;
   }
   .how-made-description-list {
     gap: 24px;
