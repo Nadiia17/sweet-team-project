@@ -63,7 +63,11 @@
   margin-top: 20px;
   margin-bottom: 32px;
   margin-right: auto;
-  width: 306px;
+}
+@media only screen and (min-width: 375px) {
+  .sellers-text {
+    width: 306px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .sellers-text {
