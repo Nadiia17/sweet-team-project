@@ -1,6 +1,5 @@
 (() => {
   const refs = {
-    sellers-connect-modal
     openModalBtn: document.querySelector("[data-modal-open-sellers]"),
     closeModalBtn: document.querySelector("[data-modal-close-sellers]"),
     modal: document.querySelector("[data-modal-sellers]"),
