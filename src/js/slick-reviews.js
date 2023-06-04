@@ -3,7 +3,7 @@ $('.reviews-container').slick({
   infinite: false,
   arrows: false,
   speed: 250,
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
   draggable: false,
   variableWidth: false,
