@@ -56,3 +56,8 @@
   transition: background-color var(--transition-dur-func),
     color var(--transition-dur-func);
 }
+
+/* ----------slick customized styles------- */
+.reviews-container > .slick-list {
+  overflow: visible;
+}

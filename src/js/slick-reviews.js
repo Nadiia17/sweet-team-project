@@ -3,9 +3,9 @@ $('.reviews-container').slick({
   infinite: false,
   arrows: false,
   speed: 250,
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 1,
-  draggable: true,
+  draggable: false,
   variableWidth: false,
   responsive: [
     {
