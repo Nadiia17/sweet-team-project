@@ -1,122 +1,113 @@
 /* ======== Section Subscribe =======*/
 
 .section-subscribe {
-    padding-top: 62px;
-    padding-bottom: 63px;
+  padding-top: 62px;
+  padding-bottom: 63px;
 
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-image: url("/img/subscribe/subscribe_mob@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #1E1823;
+  background-image: url('/img/subscribe/subscribe_mob@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #1e1823;
 }
 
 @media only screen and (min-width: 768px) {
-    .section-subscribe {
-        padding-top: 72px;
-        padding-bottom: 72px;
-    }
+  .section-subscribe {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .section-subscribe {
-        background-image: url("/img/subscribe/subscribe_mob@2x.jpg");
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-subscribe {
+    background-image: url('/img/subscribe/subscribe_mob@2x.jpg');
+  }
 }
 
 @media only screen and (min-width: 376px) {
-    .section-subscribe {
-        background-image: url("/img/subscribe/subscribe_tab@1x.jpg");
-    }
+  .section-subscribe {
+    background-image: url('/img/subscribe/subscribe_tab@1x.jpg');
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .section-subscribe {
-            background-image: url("/img/subscribe/subscribe_tab@2x.jpg");
-        }
+    .section-subscribe {
+      background-image: url('/img/subscribe/subscribe_tab@2x.jpg');
     }
+  }
 }
 
 @media only screen and (min-width: 769px) {
-    .section-subscribe {
-        background-image: url("/img/subscribe/subscribe-desk@1x.jpg");
-    }
+  .section-subscribe {
+    background-image: url('/img/subscribe/subscribe-desk@1x.jpg');
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .section-subscribe {
-            background-image: url("/img/subscribe/subscribe_desk@2x.jpg");
-        }
+    .section-subscribe {
+      background-image: url('/img/subscribe/subscribe_desk@2x.jpg');
     }
+  }
 }
 
 .container-subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding-left: 0;
-    padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media only screen and (min-width: 1200px) {
-    .container-subscribe {
-        max-width: 1200px;
-    }
+  .container-subscribe {
+    max-width: 1200px;
+  }
 }
 
 .subscribe-title {
-    color: #FFFFFF;
-    width: 291px;
+  color: #ffffff;
+  width: 291px;
 }
 
 @media only screen and (min-width: 768px) {
-    .subscribe-title {
-        width: 378px;
-        font-size: 24px;
-    }
+  .subscribe-title {
+    width: 378px;
+    font-size: 24px;
+  }
 }
 
 .subscribe-text {
-    min-width: 320px;
-    max-width: 325px;
-    font-weight: 400;
-    font-size: 14px;
+  min-width: 320px;
+  max-width: 325px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  vertical-align: top;
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-text {
+    max-width: 467px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .button-subscribe {
+    font-size: 18px;
     line-height: 1.29;
-    text-align: center;
-    vertical-align: top;
-    color: var(--color-white);
-}
-
-@media only screen and (min-width: 768px) {
-    .subscribe-text {
-        max-width: 467px;
-    }
-}
-
-.button-subscribe {
-    width: 128px;
-    height: 41px;
-    padding-top: 12px;
-    padding-left: 28px;
-    padding-bottom: 12px;
-    padding-right: 28px;
-}
-
-@media only screen and (min-width: 768px) {
-    .button-subscribe {
-        font-size: 18px;
-        line-height: 1.29;
-    }
+  }
 }
 
 /* ======== Section Subscribe =======*/
