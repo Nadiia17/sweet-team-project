@@ -29,6 +29,7 @@
     
      gap: 20px; 
      align-items: center; 
+     align-items: flex-start;
        
   }
   @media screen and (min-width: 768px) {
@@ -48,8 +49,9 @@
   }
 
   .advantages-tittle {
-    max-width: 308px;
+    max-width: 326px;
     position: relative;
+    padding-right: 18px;
   }  
 
   .advantages-tittle-img {
@@ -105,13 +107,12 @@ display: flex;
     .advantages-tittle::after {
       content: '';
       display: block; 
-    position: absolute;
-   
-    top: 50%;
-    left: 90%;
-    
+    position: absolute;   
      
      transform: rotate(90deg);
+     transform-origin:  bottom left;
+     top: 25%;
+    left: 100%;
         
       width: 124px;
  border: 1px solid rgba(255, 255, 255, 0.5);
