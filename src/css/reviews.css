@@ -73,4 +73,20 @@
   .btn-review {
     margin: 94px auto 0;
   }
+    .reviwes-section {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .review-box {
+    width: 360px;
+  }
+
+.reviwes-section{
+  padding-top: 64px;
+  padding-bottom: 128px;
+}
 }
