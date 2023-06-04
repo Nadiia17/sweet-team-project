@@ -1,5 +1,5 @@
 .review-section-title {
-  margin: 0 auto 74px;
+  margin: 0 auto 32px;
   text-align: center;
 }
 .reviwes-section {
@@ -58,6 +58,7 @@
 }
 
 /* ----------slick customized styles------- */
-.reviews-container > .slick-list {
-  overflow: visible;
+.overflow-frame {
+  min-height: 242px;
+  padding-top: 42px;
 }
