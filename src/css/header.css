@@ -27,7 +27,7 @@ padding-bottom: 19px;
 .header-logo_list{
   display: flex;
   align-items: center;
- 
+ margin-bottom: auto;
 }
 .header-logo_list-item{
   
@@ -100,13 +100,16 @@ html{
   scroll-behavior: smooth;
 }
 /* Modal menu styles */
-.mobile_menu-container{
+/* .mobile_menu-container{
   position: relative;
   padding-left: 50px;
   padding-top: 136px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
  
-}
+ 
+} */
 .mobile-menu{
   position: fixed;
   width: 50%;
@@ -115,12 +118,13 @@ html{
   top: 0;
   right: 0;
   background-color: var(--color-dark-violet);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
   
 }
 
-.mobile_modal-item{
-  margin-bottom: 24px;
-}
+
 .mobile_modal-link{
   color: var(--color-white);
   font-size: 14px;
@@ -138,9 +142,25 @@ html{
   display: flex;
   gap: 20px;
   padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   
 }
-.mobile_close-btn{
+
+.mobile-menu-wrapper{
+  display: flex;
+  flex-direction: column;
+  
+}
+.mobile_modal-menu{
+display: flex;
+flex-direction: column;
+gap: 24px;
+margin-bottom: auto;
+padding-left: 50px;
+  padding-top: 136px;
+}
+.mobile-close-btn{
   position: absolute;
   top: 20px;
   right: 20px;
@@ -160,37 +180,9 @@ html{
   width: 20px;
   height: 20px;
 }
-.mobile-wrapper{
-  position:fixed;
-  bottom: 20px;
-  
-}
+
 /* Menu toggle */
-/* .menu-toggle {
-    
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  cursor: pointer;
-  outline: none;
-} */
-
-
-
-/* .menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-} */
-
 .menu-container {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  padding: 32px;
-  background-color: var(--main-bg-color);
-  z-index: 999; */
-
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -199,12 +191,8 @@ html{
   transform: translateX(0);
 }
 
-
-
 @media screen and (max-width:1200px){
-  /* .menu-toggle {
-    display: none;
-  } */
+
   .header-nav-list{
     display: none;
   }
@@ -224,8 +212,7 @@ html{
     width: 32px;
     height: 32px;
   }
-  .mobile_menu-container{
-    position: relative;
+  .mobile_modal-menu {
     padding-left: 85px;
     padding-top: 156px;
     padding-bottom: 40px;
@@ -237,6 +224,7 @@ html{
   }
   .header-modal-list{
     padding-left: 32px;
+    padding-bottom: 24px;
   }
   .mobile-wrapper{
     bottom: 24px;
