@@ -96,7 +96,7 @@
 
 @media only screen and (min-width: 1200px) {
   .review-box {
-    max-width: 360px;
+    min-width: 360px;
     padding: 56px 24px 26px;
   }
 
@@ -106,10 +106,13 @@
   }
 
   .reviews-container > .slick-list > .slick-track > .slick-slide {
-    margin: 0 21px;
+    margin: 0 28px;
     margin-left: 0;
   }
   .reviews-container > .slick-list {
     margin: 0 -1px;
+  }
+  .overflow-frame {
+    min-width: 360px;
   }
 }
