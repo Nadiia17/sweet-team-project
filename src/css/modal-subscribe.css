@@ -37,7 +37,7 @@
   display: block;
   max-width: 311px;
   height: 169px;
-  background-image: url(/img/modal-subscribe/subscribe-modal-mob@1x.jpg);
+  background-image: url('/img/modal-subscribe/subscribe-modal-mob@1x.jpg');
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -170,7 +170,7 @@
   .modal-subscribe-thumb {
     min-width: 538px;
     height: 196px;
-    background-image: url(/img/modal-subscribe/subscribe-modal-tab@1x.jpg);
+    background-image: url('/img/modal-subscribe/subscribe-modal-tab@1x.jpg');
   }
 
   .modal-subscribe-close-btn {
@@ -290,7 +290,7 @@
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .modal-subscribe-thumb {
-    background-image: url(/img/modal-subscribe/subscribe-modal-desk@1x.jpg);
+    background-image: url('/img/modal-subscribe/subscribe-modal-desk@1x.jpg');
   }
 }
 
@@ -300,7 +300,7 @@
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
   .modal-subscribe-thumb {
-    background-image: url(/img/modal-subscribe/subscribe-modal-mob@2x.jpg);
+    background-image: url('/img/modal-subscribe/subscribe-modal-mob@2x.jpg');
   }
 }
 
@@ -308,7 +308,7 @@
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
   .modal-subscribe-thumb {
-    background-image: url(/img/modal-subscribe/subscribe-modal-tab@2x.jpg);
+    background-image: url('/img/modal-subscribe/subscribe-modal-tab@2x.jpg');
   }
 }
 
@@ -316,6 +316,6 @@
   (min-resolution: 192dpi) and (min-width: 1200px),
   (min-resolution: 2dppx) and (min-width: 1200px) {
   .modal-subscribe-thumb {
-    background-image: url(/img/modal-subscribe/subscribe-modal-desk@2x.jpg);
+    background-image: url('/img/modal-subscribe/subscribe-modal-desk@2x.jpg');
   }
 }
