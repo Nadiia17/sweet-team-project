@@ -1,0 +1,50 @@
+<div class="backdrop is-hidden" data-modal-reviews>
+  <div class="modal-window-review">
+    <h2 class="review-title section-title">
+      LEAVE A REVIEW <br />
+      ABOUT
+      <span class="review-title-accent">OUR CHOCoLATE</span>
+    </h2>
+    <form action="modal-form-review">
+      <input
+        class="reviewer-name reviewer-form-field"
+        type="text"
+        name="name_form"
+        placeholder="Name"
+      />
+      <input
+        class="reviewer-email reviewer-form-field"
+        type="email"
+        name="email_form"
+        placeholder="Enter your email"
+      />
+
+      <div class="phone-wrapper">
+        <div class="phone-flex">
+          <svg class="ua-flag" width="24" height="24">
+            <use href="./img/sgv-sprite.svg#ua"></use>
+          </svg>
+          <label class="phone-uacode" for="tel_form">+380</label>
+        </div>
+        <input
+          class="reviewer-tel reviewer-form-field"
+          type="tel"
+          name="tel_form"
+          id="tel_form"
+          placeholder="Phone number"
+        />
+      </div>
+      <textarea
+        class="reviewer-text reviewer-form-field"
+        name="text_form"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="button btn-orange" type="submit">Send</button>
+    </form>
+    <button type="button" class="button-close" data-modal-close-reviews>
+      <svg class="modal-button-icon" width="12" height="12">
+        <use href="./img/sgv-sprite.svg#icon-close-black-18dp"></use>
+      </svg>
+    </button>
+  </div>
+</div>
