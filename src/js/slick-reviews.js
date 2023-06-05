@@ -13,7 +13,7 @@ $('.reviews-container').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: true,
+        infinite: false,
         variableWidth: true,
         dots: true,
       },
