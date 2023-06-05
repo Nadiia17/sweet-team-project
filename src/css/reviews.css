@@ -109,7 +109,7 @@
     margin: 0 21px;
     margin-left: 0;
   }
-     .reviews-container>.slick-list {
-       margin: 0 -1px;
-     }
+  .reviews-container > .slick-list {
+    margin: 0 -1px;
+  }
 }
