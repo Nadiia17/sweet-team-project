@@ -5,7 +5,7 @@ $('.reviews-container').slick({
   speed: 250,
   slidesToShow: 3,
   slidesToScroll: 1,
-  draggable: false,
+  draggable: true,
   variableWidth: false,
   responsive: [
     {
