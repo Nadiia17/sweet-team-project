@@ -90,8 +90,10 @@
   .sellers-btn {
     margin-top: 0;
     margin-right: 0;
-    width: 162px;
-    height: 50px;
+    /* width: 162px;
+    height: 50px; */
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 
@@ -125,6 +127,7 @@
   .text_btn {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 @media only screen and (min-width: 375px) {
