@@ -2,9 +2,9 @@
 
 .section-subscribe {
   padding-top: 62px;
-  padding-bottom: 63px;
+  padding-bottom: 62px;
 
-  max-width: 1200px;
+  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
@@ -17,6 +17,7 @@
 
 @media only screen and (min-width: 768px) {
   .section-subscribe {
+    max-width: 768px;
     padding-top: 72px;
     padding-bottom: 72px;
   }
@@ -30,7 +31,7 @@
   }
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 768px) {
   .section-subscribe {
     background-image: url('/img/subscribe/subscribe_tab@1x.jpg');
   }
@@ -44,7 +45,10 @@
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1200px) {
+  .section-subscribe {
+    max-width: 1200px;
+  }
   .section-subscribe {
     background-image: url('/img/subscribe/subscribe-desk@1x.jpg');
   }
@@ -68,14 +72,14 @@
   padding-right: 0;
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .container-subscribe {
     max-width: 1200px;
   }
-}
+} */
 
 .subscribe-title {
-  color: #ffffff;
+  color: var(--color-white);
   width: 291px;
 }
 
@@ -87,8 +91,7 @@
 }
 
 .subscribe-text {
-  min-width: 320px;
-  max-width: 325px;
+  max-width: 326px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
