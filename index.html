@@ -30,7 +30,7 @@
     <!-- Custom styles -->
     
     <script type="module" crossorigin src="/sweet-team-project/assets/index-284f2eae.js"></script>
-    <link rel="stylesheet" href="/sweet-team-project/assets/index-4f1ad583.css">
+    <link rel="stylesheet" href="/sweet-team-project/assets/index-b9989011.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -957,12 +957,17 @@
       <input
         class="reviewer-name reviewer-form-field"
         type="text"
+        pattern="^[A-Za-z ]+$"
+        minlength="2"
+        maxlength="30"
+        title="Type your name. Use letters of the Latin alphabet only. "
         name="name_form"
         placeholder="Name"
       />
       <input
         class="reviewer-email reviewer-form-field"
         type="email"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         name="email_form"
         placeholder="Enter your email"
       />
@@ -978,6 +983,9 @@
           class="reviewer-tel reviewer-form-field"
           type="tel"
           name="tel_form"
+          pattern="[0-9]{2}[0-9]{3}[0-9]{4}"
+          maxlength="9"
+          title="Enter your number. Use only numbers. "
           id="tel_form2"
           placeholder="Phone number"
         />
