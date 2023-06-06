@@ -15,6 +15,7 @@
         title="Type your name. Use letters of the Latin alphabet only. "
         name="name_form"
         placeholder="Name"
+        required
       />
       <input
         class="reviewer-email reviewer-form-field"
@@ -22,6 +23,7 @@
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         name="email_form"
         placeholder="Enter your email"
+        required
       />
 
       <div class="phone-wrapper">
@@ -37,15 +39,17 @@
           name="tel_form"
           pattern="[0-9]{2}[0-9]{3}[0-9]{4}"
           maxlength="9"
-          title="Enter your number. Use only numbers. "
+          title="Enter your cell number. Use only numbers. "
           id="tel_form2"
           placeholder="Phone number"
+          required
         />
       </div>
       <textarea
         class="reviewer-text reviewer-form-field"
         name="text_form"
         placeholder="Enter text"
+        required
       ></textarea>
       <button class="button btn-orange" type="submit">Send</button>
     </form>
